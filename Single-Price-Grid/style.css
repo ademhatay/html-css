@@ -1,0 +1,149 @@
+/*Karla Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+/*Variables*/
+:root {
+    --cyan: hsl(179, 62%, 43%);
+    --bright-yellow: hsl(71, 73%, 54%);
+    --light-gray: hsl(204, 43%, 93%);
+    --grayish-blue: hsl(218, 22%, 67%);
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+body {
+    font-family: 'Karla', sans-serif;
+    background-color: var(--light-gray);
+}
+
+.container {
+    max-width: 720px;
+    height: 480px;
+    background-color: var(--cyan);
+    margin: 4em auto;
+    border-radius: 7px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.head {
+    padding: 40px;
+    height: 50%;
+    background-color: white;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+}
+
+.body {
+    ;
+    height: 50%;
+}
+
+.left {
+    width: 360px;
+    height: 100%;
+    background: var(--cyan);
+    border-bottom-left-radius: 7px;
+    display: inline-block;
+    padding: 50px;
+}
+
+.right {
+    width: 360px;
+    height: 100%;
+    background-color: rgba(74,190,189,255);
+    border-bottom-right-radius: 7px;
+    float: right;
+    padding: 50px 50px 30px 50px;;
+}
+
+.head h2 {
+    color: var(--cyan);
+    padding-bottom: 20px;
+}
+
+.head .slogan {
+    color: var(--bright-yellow);
+    padding-bottom: 10px;
+    font-weight: 700;
+    font-size: 1.1em;
+}
+
+.head .description {
+    color: var(--grayish-blue);
+    line-height: 1.3em;
+}
+
+.left h3 {
+    color: white;
+}
+
+.left p:first-of-type {
+    color: white;
+    margin-top: 10px;
+}
+
+.left p:last-of-type {
+    color: white;
+    margin-top: 10px;
+}
+
+.left p span:first-of-type {
+    font-size: 2em;
+    font-weight: 700;
+}
+
+.left p span:last-of-type {
+    opacity: 0.7;
+    margin-bottom: 5px;
+}
+
+.btn{
+    display: inline-block;
+    padding: 0.8em 5.5em;
+    background-color: var(--bright-yellow);
+    margin-top: 1.4em;
+    color: white;
+    border-radius: 7px;
+    transition: all 0.6s ease;
+    border: 1px solid var(--cyan);
+}
+
+.btn:hover{
+    color: white;
+    background-color: var(--cyan);
+    border: 1px solid var(--bright-yellow);
+}
+
+.right h3{
+    color: #fff;
+}
+
+.right ul{
+    margin-top: 10px;
+    color: white;
+    opacity: 0.8;
+}
+
+@media screen and (max-width:720px){
+    .right{
+        width: 100%;
+    }
+    .left{
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+    .container{
+        width: 90%;
+        height: 80%;
+    }
+}
