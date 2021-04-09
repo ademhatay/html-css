@@ -1,0 +1,23 @@
+//colors
+$strongCyan: hsl(171, 66%, 44%);
+$lightBlue: hsl(233, 100%, 69%);
+$darkGrayishBlue: hsl(210, 10%, 33%);
+$GrayishBlue: hsl(201, 11%, 66%);
+
+.cyan {
+    background-color: $strongCyan;
+    transition: 0.4s all ease;
+}
+
+.lightBlue {
+    background-color: $lightBlue;
+    transition: 0.4s all ease;
+}
+
+.cyan:hover {
+    box-shadow: 10px 10px 10px black;
+}
+
+.lightBlue:hover {
+    box-shadow: 10px 10px 10px black;
+}
